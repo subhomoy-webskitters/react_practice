@@ -1,0 +1,95 @@
+form {
+    display: flex;
+    width: 500px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+form input:not([type="submit"]) {
+    min-height: 50px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.image-holder {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.full-height-wrapper {
+    min-height: calc(100vh - 70px);
+    padding-block: 70px;
+    background-color: #daf1ff;
+}
+
+.service-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.service-content.active {
+    display: block;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: inherit;
+}
+
+.MuiCard-root {
+    height: 100%;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-form li label {
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+.contact-form li div label {
+    display: inline-flex;
+    align-items: center;
+    min-width: auto;
+}
+
+.contact-form li div label input {
+    margin-right: 15px;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}

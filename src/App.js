@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// import {createContext} from "react";
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import Navigation from "./components/navigation/Navigation";
+// import Error from "./components/pages/Error";
+// import ComA from "./components/contextApi/ComA";
 
+// let FirstName = createContext();
+// let LastName = createContext();
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <FirstName.Provider value={"Subhomoy"}>
+        <LastName.Provider value={"Pal"}>
+          <ComA />
+        </LastName.Provider>
+      </FirstName.Provider> */}
+      <Navigation />
+      <Outlet />
+    </>
   );
 }
 
 export default App;
+// export {FirstName, LastName};
